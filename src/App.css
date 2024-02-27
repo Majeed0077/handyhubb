@@ -1,0 +1,19 @@
+body {
+  background-color: black !important;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.app-container {
+  display: flex;
+}
+
+.sidebar-container {
+  flex: 0 0 250px; /* Fixed width for the sidebar */
+}
+
+.main-content {
+  flex: 1; /* Take remaining space */
+}
