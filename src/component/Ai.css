@@ -1,75 +1,80 @@
-  .img-container {
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .img-grid {
-    margin-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .img-item {
-    width: calc(25% - 100px);
-    margin-bottom: 0px; 
-  }
-  
-  .link-image,
-  .movie-image {
-    width: 100%;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(215, 11, 11, 0.501);
-    border-radius: 30px 0 30px 0;
-  }
-  
-  .img-item::after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  
-  /* Overlay */
-  .img-item {
-    position: relative;
-    display: inline-block;
-    height: 10rem;
-  }
-  
-  .img-overlay {
-    position: absolute;
-    top: 100%; 
-    left: 5%;
-    width: 74%;
-    height: 55%;
-    text-align: center;
-    background-color: rgba(17, 16, 16, 0.576);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    transition: top 0.5s ease;
-    padding: 20px;
-    border-radius: 20px 0 20px 0;
-  }
-  
-  .img-item:hover .img-overlay {
-    top: 0; 
-    cursor: pointer;
-  }
-  
-  .img-item:not(:hover) .img-overlay {
-    top: 100%; 
-    opacity: 0;
-  }
-  
-  .img-overlay span {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-    
+.img-container {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Grid for displaying images */
+.img-grid {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Individual image item */
+.img-item {
+  width: calc(25% - 100px);
+  margin-bottom: 0px;
+}
+
+/* Link image and movie image */
+.link-image,
+.movie-image {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(215, 11, 11, 0.501);
+  border-radius: 30px 0 30px 0;
+}
+
+/* Clearfix for img-item */
+.img-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Overlay for images */
+.img-item {
+  position: relative;
+  display: inline-block;
+  height: 10rem;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 100%; 
+  left: 50%; 
+  transform: translate(-50%, 0); 
+  width: 12.5rem;
+  height: 55%;
+  text-align: center;
+  background-color: rgba(23, 1, 1, 0.774);
+  color: white;
+  display: none; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 27px 0 27px 0;
+}
+
+.img-item:hover .img-overlay {
+  top: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+.img-item:not(:hover) .img-overlay {
+  top: 100%;
+  opacity: 0;
+}
+
+.img-overlay span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* Select */
 .category-tooltip {
   position: absolute;
@@ -124,7 +129,6 @@
   color: white;
 }
 
-
 /* Search Container */
 .search-container {
   display: flex;
@@ -140,9 +144,9 @@
   border: 1px solid #ccc;
   border-radius: 20px;
   padding: 5px 10px;
-  width: 80%; /* Adjusted width for smaller screens */
+  width: 80%; 
   max-width: 400px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow for better visual */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Search Icon */
@@ -160,41 +164,30 @@
   background: transparent;
   outline: none;
   font-size: 14px;
-  color: #333; /* Changed text color for better contrast */
+  color: #333; 
 }
-
-/* Search Input Placeholder */
 .search-input::placeholder {
   color: #888;
 }
-
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  .search-bar {
-    width: 60%;
-    height: 15px;
-  }
-}
-
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .img-item {
-    width: calc(50% - 10px); 
+    width: calc(50% - 10px);
     margin-bottom: 5px;
   }
   .category-label {
     font-size: 16px;
     margin: 0 5px 10px;
-    max-width: calc(50% - 20px); 
+    max-width: calc(50% - 20px);
   }
-  .img-overlay{
-    width: 60%;
+  .img-overlay {
+    width: 70%;
     height: 55%;
-    top: 100%; 
-    left: 12%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   .img-item {
     width: 100%;
     margin-bottom: 5px;
@@ -205,6 +198,3 @@
     max-width: calc(100% - 20px);
   }
 }
-
-
-

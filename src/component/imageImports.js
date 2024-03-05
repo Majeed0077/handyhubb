@@ -48,10 +48,13 @@ import Luma from '../img/Luma.jpg';
 import Topaz from '../img/Topaz.jpg';
 import PDF24 from '../img/PDF24.jpg';
 import Gling from '../img/gling.jpg';
+import pngwing from '../img/pngwing.png';
+import synthesia from '../img/synthesia.png';
+import notion from '../img/notion.png';
 
 export {
     Bard, GPT, Gravity, Runway, Uber, eklipse, Opus, Canva, Invideo, Clip, Text, Rapid, Rapid2, Bing, Remaker, ReactImg, W3,
     Font, Icons, btn, javat, Tuto, Boot, Road, Geek, pikso, Musicfy, decohere, flixier, short, Tensor, coschedule, Pictory,
     simplified, writesonic, tuberanker, thumbnail, metavoice, lexica, Mubert, Leonardo, Bg, pfpmaker, heygen,pix,firefly,Luma,Topaz,
-    PDF24,Gling
+    PDF24,Gling,pngwing,synthesia,notion
 };

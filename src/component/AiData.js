@@ -3,7 +3,7 @@ import {
     ReactImg, W3, javat, Tuto, Geek, Boot, Road, Font, btn, Icons, Bard, GPT, Gravity, Runway,
     Uber, eklipse, Opus, Canva, Invideo, Clip, Text, Rapid, Rapid2, Bing, Remaker, pikso,
     Musicfy, decohere, flixier, short, Tensor, coschedule, Pictory, simplified, writesonic,
-    tuberanker, thumbnail, metavoice, lexica, Mubert, Leonardo,Bg,pfpmaker,heygen,pix, firefly,Luma,Topaz,PDF24,Gling
+    tuberanker, thumbnail, metavoice, lexica, Mubert, Leonardo,Bg,pfpmaker,heygen,pix, firefly,Luma,Topaz,PDF24,Gling,pngwing,synthesia,notion,
 } from './imageImports';
 
 const AiData = [
@@ -33,14 +33,14 @@ const AiData = [
         imageUrl: Tuto,
         title: 'Tutorials Point',
         category: 'Development',
-        description: "Your go-to destination for comprehensive programming tutorials. Learn coding languages, frameworks, and tools efficiently."
+        description: "Learn coding languages, frameworks, and tools efficiently."
     },
     {
         url: 'https://www.geeksforgeeks.org/',
         imageUrl: Geek,
         title: 'Geeksforgeeks',
         category: 'Development',
-        description: " Master algorithms, programming languages, and interview preparation with our comprehensive tutorials and articles."
+        description: "Master algorithms, programming languages, and interview preparation."
     },
     {
 
@@ -79,16 +79,16 @@ const AiData = [
         description: "Discover a treasure trove of icons and illustrations for your design projects with Iconscout."
     },
     {
-        url: 'https://bard.google.com/chat', imageUrl: Bard,
-        title: 'Bard',
+        url: 'https://gemini.google.com/', imageUrl: Bard,
+        title: 'Gemini',
         category: 'AI',
-        description: 'Explore a new way of creating and sharing stories with Google Bard, a collaborative storytelling platform.'
+        description: 'Get help with writing, planning, learning, and more from Google AI.'
     },
     {
         url: 'https://chat.openai.com/', imageUrl: GPT,
         title: 'ChatGPT',
         category: 'AI',
-        description: 'Enhance your conversations and productivity with ChatGPT, an AI-powered language model for text-based interactions.'
+        description: 'an AI-powered language model for text-based interactions.'
     },
     {
         url: 'https://gravitywrite.com/',
@@ -109,21 +109,21 @@ const AiData = [
         imageUrl: Uber,
         title: 'UberDuck',
         category: 'AI',
-        description: 'Burning In The Shadows, Generate speech, singing, and rapping from text. Write code for text to speech, text to singing, text to rapping, and voice'
+        description: 'Generate speech, singing, and rapping from text. Write code for text to speech, text to singing, text to rapping, and voice'
     },
     {
         url: 'https://eklipse.gg/',
         imageUrl: eklipse,
         title: 'Eklipse',
         category: 'Video Editor',
-        description: 'Eklipse is an advanced AI tool that automatically generates highlights from your Kick Twitch, YouTube, and Facebook streams and videos.'
+        description: 'Eklipse is an advanced AI tool that automatically generates highlights from your Kick Twitch, YouTube, and Facebook videos.'
     },
     {
         url: 'https://www.opus.pro/',
         imageUrl: Opus,
         title: 'Opus Clip',
         category: 'Video Editor',
-        description: 'Opus Clip turns long videos into high-quality viral clips for you to share on TikTok, YouTube Shorts, and Reels to increase social media reach.'
+        description: 'Opus Clip turns long videos into high-quality viral clips for you to share on TikTok, YouTube Shorts, to increase social media reach.'
     },
     {
         url: 'https://bing.com/create',
@@ -184,9 +184,9 @@ const AiData = [
     {
         url: 'https://freepik.com/pikaso#',
         imageUrl: pikso,
-        title: 'Text to Image',
-        category: 'AI',
-        description: 'Freepik.com/Pikaso#: Your design companion. Access high-quality graphics and illustrations on Freepik.'
+        title: 'FreePik',
+        category: 'Image Generator',
+        description: 'AI TEXT-TO-IMAGE. Turn your words into oh-so-incredible images. image generator '
     },
     {
         url: 'https://create.musicfy.lol/',
@@ -207,7 +207,7 @@ const AiData = [
         imageUrl: flixier,
         title: 'Flixier',
         category: 'Video Editor',
-        description: 'Flixier Combines a Powerful Interface with Ready-Made Drag and Drop beautiful media assets. Enjoy Our Browser Based Video Editor any device and create beautiful videos that get views.'
+        description: 'a Powerful Interface with Ready-Made Drag and Drop beautiful media assets. Video Editor any device and create beautiful videos that get views.'
     },
     {
         url: 'https://app.2short.ai/',
@@ -220,8 +220,8 @@ const AiData = [
         url: 'https://tensor.art/',
         imageUrl: Tensor,
         title: 'Tensor',
-        category: 'AI',
-        description: 'AI model sharing platform, online run models to generate image for free. Your can upload or download models, include Checkpoint, Embedding'
+        category: 'Image Generator',
+        description: 'AI model sharing platform, online run models to generate image for free. Your can upload or download models'
     },
     {
         url: 'https://coschedule.com/ai-youtube-title-generator',
@@ -248,7 +248,7 @@ const AiData = [
         url: 'https://writesonic.com/',
         imageUrl: writesonic,
         title: 'Writesonic, Youtube',
-        category: 'Youtube Tools',
+        category: 'AI',
         description: 'Writesonic is an AI writer that creates SEO-friendly content for blogs, Facebook ads, Google ads, and Shopify for free.'
     },
     {
@@ -256,14 +256,14 @@ const AiData = [
         imageUrl: tuberanker,
         title: 'Tuber Ranker , Youtube',
         category: 'Youtube Tools',
-        description: 'Explore TubeRanker Powerful YouTube SEO Tool. TubeRanker offers a collection of tools to audit your channel for obvious issues, research keywords'
+        description: 'Powerful YouTube SEO Tool. TubeRanker offers a collection of tools to audit your channel for research keywords'
     },
     {
         url: 'https://thumbnail.ai/',
         imageUrl: thumbnail,
         title: 'Thumbnail Ai , Youtube',
         category: 'Youtube Tools',
-        description: 'With a thumbnail generator like Thumbnail AI, you can easily edit, customize, and enhance your thumbnails to make them stand out from the crowd. '
+        description: 'thumbnail generator like Thumbnail AI, you can easily edit, customize, and enhance your thumbnails to make them stand out from the crowd. '
     },
     {
         url: 'https://themetavoice.xyz/',
@@ -284,7 +284,7 @@ const AiData = [
         imageUrl: Mubert,
         title: 'Mubert',
         category: 'AI',
-        description: 'Mubert instantly generates tracks perfectly tailored to your content on any platform. Royalty-free background music for YouTube, TikTok, podcasts and video!'
+        description: 'Mubert instantly generates tracks perfectly tailored to your content on any platform. Royalty-free background music for YouTube.'
     },
     {
         url: 'https://leonardo.ai/',
@@ -326,7 +326,7 @@ const AiData = [
         imageUrl: firefly,
         title: 'Adobe Firefly',
         category: 'Image Generator',
-        description: "Adobe Firefly, a product of Adobe Creative Cloud, is a generative machine learning model that is used in the field of design. It is in the public beta test phase. Adobe Firefly is developed using Adobe's Sensei platform."
+        description: "a product of Adobe Creative Cloud,It is in the public beta test phase. Adobe Firefly is developed using Adobe's Sensei platform."
     },
     {
         url: 'https://lumalabs.ai/',
@@ -355,6 +355,27 @@ const AiData = [
         title: 'Gling',
         category: 'Youtube Tools',
         description: "AI-powered video editing for YouTubers. We automatically cut out silences and bad takes so you have time for the fun creative stuff."
+    },
+    {
+        url: 'https://www.pngwing.com/',
+        imageUrl: pngwing,
+        title: 'PngWing',
+        category: 'Image Generator',
+        description: "High quality cutout png images in PNGWing, free and unlimited downloads."
+    },
+    {
+        url: 'https://www.synthesia.io/',
+        imageUrl: synthesia,
+        title: 'Synthesia',
+        category: 'Video Editor',
+        description: "Our AI Video Generator enables everyone to create professional videos without mics, cameras, actors or studios."
+    },
+    {
+        url: 'https://www.notion.so/',
+        imageUrl: notion,
+        title: 'Notion ',
+        category: 'AI',
+        description: "A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team."
     },
 
 
